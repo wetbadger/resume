@@ -53,11 +53,15 @@ window {
 file {
     font-family:Monaco, monospace;
     display: block;
-    background-color:#ffffff;
+    background-color:#cccccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    outline: solid 1px #b3b3b3;
     text-align: center;
     color: rgb(0, 0, 0);
     width: 300px;
-    padding-top: 15px;
+    padding-top: 12px;
+    margin-top:5px;
     padding-bottom: 15px;
     font-size: 14px;
     user-select: none;
@@ -922,19 +926,27 @@ printDict(work_experience)
 print("\033[1mEDUCATION:\033[0m \n")
 printDict(education)
 
-print("\033[1mCERTIFICATIONS\033[0m \n")
+print("\033[1mCERTIFICATIONS:\033[0m \n")
 printList(certifications)
 
 print("\033[1mSKILLS:\033[0m \n")
 printList(skills)
 
-print("\033[1mPROJECTS AND CONTRIBUTIONS\033[0m \n")
+print("\033[1mPROJECTS AND CONTRIBUTIONS:\033[0m \n")
 printDict(personal_projects_and_contributions)
 
-print("\033[1mREFERENCES\033[0m \n")
+print("\033[1mREFERENCES:\033[0m \n")
 printDict(references)
 
 print("Phone numbers provided upon request.")
 input()
 print("Thanks for reading my resume!")
 </div>
+
+<script>
+let today = new Date()
+time = today.getHours() + ":" + today.getMinutes();
+
+var clock = document.getElementById("time");
+clock.innerHTML = time;
+</script>
