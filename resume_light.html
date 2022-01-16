@@ -918,24 +918,24 @@ def printList(words):
     print(*["  "+x for x in words], sep="\n", end="\n\n")
  
 print(contact+"\n")
-print("\033[1mPROFILE:\033[0m \n" + profile)
+print("PROFILE: \n" + profile)
 
-print("\033[1mWORK EXPERIENCE:\033[0m \n")
+print("WORK EXPERIENCE: \n")
 printDict(work_experience)
 
-print("\033[1mEDUCATION:\033[0m \n")
+print("EDUCATION: \n")
 printDict(education)
 
-print("\033[1mCERTIFICATIONS:\033[0m \n")
+print("CERTIFICATIONS: \n")
 printList(certifications)
 
-print("\033[1mSKILLS:\033[0m \n")
+print("SKILLS: \n")
 printList(skills)
 
-print("\033[1mPROJECTS AND CONTRIBUTIONS:\033[0m \n")
+print("PROJECTS AND CONTRIBUTIONS: \n")
 printDict(personal_projects_and_contributions)
 
-print("\033[1mREFERENCES:\033[0m \n")
+print("REFERENCES: \n")
 printDict(references)
 
 print("Phone numbers provided upon request.")
@@ -945,8 +945,18 @@ print("Thanks for reading my resume!")
 
 <script>
 let today = new Date()
-time = today.getHours() + ":" + today.getMinutes();
+hrs = today.getHours()
+mins = today.getMinutes();
+meridiem = "AM"
 
+if (hrs > 12) {
+    hrs-=12;
+    meridiem = "PM"
+}
+if (mins < 10) {
+    mins = "0" + mins;
+}
+time = hrs + ":" + mins + " " + meridiem;
 var clock = document.getElementById("time");
 clock.innerHTML = time;
 </script>
