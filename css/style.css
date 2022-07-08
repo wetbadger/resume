@@ -1,0 +1,77 @@
+header {
+    padding-top: 12px;
+    border-bottom: 5px solid #bbbbbb; 
+    color: white;
+    background-color: black;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li + li {
+    display: inline-block;
+}
+
+header li + li + li {
+    padding-left: 10em;
+}
+
+h1{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 1em;
+	font-weight: 700;
+}
+
+h3 {
+    font-size: 1em;
+    
+}
+
+h4 {
+    font-size: 0.9em;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 1em;
+}
+
+p {
+    font-size: 0.8em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 2em;
+
+}
+
+main {
+    columns: 2;
+    margin-top: 2em;
+}
+
+section {
+    break-inside: avoid-column;
+    border-bottom: 3px solid #bbbbbb; 
+    padding-bottom: 1em;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills h3 {
+    padding-bottom: 1em;
+}
+
+.skills p {
+    align-self: flex-end;
+}
+
+footer {
+    margin-top: 2em;
+    font-size: 0.8em;
+}
